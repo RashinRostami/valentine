@@ -1,0 +1,74 @@
+/* Envelope Wrapper (والد) */
+.envelope-wrapper {
+  position: relative; 
+  width: 320px;
+  margin: 16px auto;
+  cursor: pointer;
+}
+
+.envelope-img {
+  width: 100%;
+  image-rendering: pixelated;
+  transition: transform 0.3s steps(4, end);
+}
+
+.envelope-wrapper.open .envelope-img {
+  transform: scale(0.9);
+}
+
+/* ⬅️ استایل‌های .letter (اصلاح شده برای حذف اسکرول و افزایش ابعاد) ➡️ */
+/* ⬅️ استایل‌های .letter (اصلاح شده برای حذف اسکرول و افزایش ابعاد) ➡️ */
+.letter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* اولش نامه رو وسط پاکت مخفی می‌کنیم و سایزشو صفر می‌کنیم */
+  transform: translate(-50%, -50%) scale(0); 
+  opacity: 0; 
+  
+  /* --- تغییرات در ابعاد --- */
+  width: 260px; /* افزایش عرض کادر */
+  /* height: 200px;   <--- این خط باید حذف شود! */
+  
+  padding: 14px;
+  
+  /* استایل‌های ظاهری نامه */
+  background: #fffafc;
+  border: 2px solid #ff9dbb;
+  font-family: "Press Start 2P", monospace;
+  font-size: 10px;
+  color: var(--dark);
+  
+  z-index: 5;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* حالت باز شدن نامه (وقتی کلاس open به wrapper اضافه شد) */
+.envelope-wrapper.open .letter {
+  /* ... */
+  /* همچنین برای مرکزی شدن بهتر وقتی ارتفاع دینامیک است، می‌توانیم top را کمی تغییر دهیم یا فقط از translateY استفاده کنیم. */
+  transform: translate(-50%, -100%) scale(1); 
+  opacity: 1;
+}
+
+
+/* استایل‌های متن نامه */
+#typed-text {
+  font-size: 10px; 
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+/*... بقیه استایل‌ها (cursor, blink) بدون تغییر ...*/
+.cursor {
+  display: inline-block;
+  width: 6px;
+  height: 12px;
+  background: currentColor;
+  margin-left: 2px;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}

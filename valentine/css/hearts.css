@@ -1,0 +1,27 @@
+.pixel-hearts {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.pixel-heart {
+  position: fixed;
+  bottom: -30px;
+  image-rendering: pixelated;
+  pointer-events: none;
+  z-index: 0;
+  animation-name: floatUp;
+  animation-timing-function: linear;
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-110vh);
+    opacity: 0;
+  }
+}

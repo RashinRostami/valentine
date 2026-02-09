@@ -1,0 +1,22 @@
+.screen{
+    position:fixed;
+    inset:0;
+    display:none;
+    justify-content:center;
+    align-items:center;
+  }
+  
+  .screen--active{
+    display:flex;
+  }
+  body {
+    position: relative;
+  }
+  
+  .screen {
+    position: relative;
+    z-index: 2;
+  }
+  
+  
+  

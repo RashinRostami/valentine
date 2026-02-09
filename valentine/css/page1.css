@@ -1,0 +1,87 @@
+.page1 {
+  width: 630px;
+  height: 630px;
+
+  background: url("../assets/window.png") no-repeat center center;
+  background-size: contain;
+
+  padding: 24px;
+
+  margin: 0 auto;
+  margin-top: 88px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
+  
+  .page1__title{
+    text-align:center;
+    color:var(--pink);
+  }
+  
+  .page1__stage{
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    margin-bottom: 0;
+  }
+  
+  .page1__image{
+    width: 300px;
+    margin-top: 12%;
+  height: auto;
+  display: block;
+  }
+  
+  .page1__question {
+    font-size: 18px;
+    text-align: center;
+  
+    /* فاصله خیلی کم از عکس – دقیق زیرش */
+    margin-top: 2px;   /* 🔥 پیکسل بهینه */
+    margin-bottom: 12px;
+  
+    line-height: 1.5;
+  }
+  
+  
+  .page1__question span {
+    color: var(--pink);
+  }
+  
+  
+  .page1__buttons {
+    position: relative;
+    width: 100%;
+    height: 60px;
+  }
+  
+  
+  .btn {
+    position: absolute;
+    padding: 10px 18px;
+  
+    border: 4px solid var(--dark);
+    box-shadow: 4px 4px 0 var(--dark);
+  
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  
+  .btn--yes {
+    right: 40px;
+    background: var(--pink);
+    color: #fff;
+  }
+  
+  .btn--no {
+    left: 40px;
+    background: #ddd;
+  }
+  
+  
