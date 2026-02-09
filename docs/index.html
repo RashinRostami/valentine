@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Happy Valentine</title>
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/screens.css">
+<link rel="stylesheet" href="css/page1.css">
+<link rel="stylesheet" href="css/page2.css">
+<link rel="stylesheet" href="css/envelope.css">
+<link rel="stylesheet" href="css/hearts.css">
+</head>
+
+<body>
+  <div class="hearts-layer" id="heartsLayer"></div>
+<!-- PAGE 1 -->
+<section class="screen screen--active" id="page1">
+  <div class="page1">
+    <div class="page1__stage">
+      <img src="assets/characters.png" class="page1__image">
+    </div>
+
+    <div class="page1__question">
+      Will you be my <span>VALENTINE?</span>
+    </div>
+
+    <div class="page1__buttons">
+      <button class="btn btn--no" id="noBtn">NO</button>
+      <button class="btn btn--yes" id="yesBtn">YES!</button>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 2 -->
+<section class="screen" id="page2">
+  <h2 class="banner">★ Happy Valentine! ★</h2>
+
+  <div class="envelope-wrapper">
+    <img src="assets/envelope.png" class="envelope-img" />
+  
+    <div class="letter">
+      <div id="typed-text"></div>
+    </div>
+  </div>
+  
+  
+  <div class="timer" id="timer">
+    <div class="timer__box"><span id="d">000</span>DAYS</div>
+    <div class="timer__box"><span id="h">00</span>HRS</div>
+    <div class="timer__box"><span id="m">00</span>MIN</div>
+  </div>
+  
+  
+</section>
+
+<script src="js/navigation.js"></script>
+<script src="js/no-button.js"></script>
+<script src="js/timer.js"></script>
+<script src="js/letter.js"></script>
+<script src="js/envelope.js"></script>
+<script src="js/hearts.js"></script>
+
+</body>
+</html>
