@@ -9,7 +9,7 @@
 
 *{
   box-sizing:border-box;
-  font-family:"Press Start 2P", monospace;
+font-family: "Press Start 2P", "Courier New", monospace;
 }
 
 body{
@@ -17,4 +17,5 @@ body{
   min-height:100vh;
   background:var(--pink-light);
 }
+
 
