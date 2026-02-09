@@ -15,6 +15,8 @@
 *{
   box-sizing:border-box;
 font-family: "Press Start 2P", "Courier New", monospace;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body{
@@ -22,6 +24,7 @@ body{
   min-height:100vh;
   background:var(--pink-light);
 }
+
 
 
 
