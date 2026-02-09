@@ -84,4 +84,55 @@
     background: #ddd;
   }
   
+/* ===============================
+   📱 MOBILE FIX (Portrait)
+================================ */
+@media (max-width: 768px) {
+
+  .page1 {
+    width: 100vw;
+    height: auto;
+
+    aspect-ratio: 1 / 1; /* مربع بماند */
+    max-width: 420px;
+
+    margin-top: 24px;
+    padding: 16px;
+
+    background-size: contain;
+  }
+
+  .page1__stage {
+    margin-top: 48px;
+  }
+
+  .page1__image {
+    width: 220px;
+    margin-top: 0;
+  }
+
+  .page1__question {
+    font-size: 14px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+  }
+
+  .page1__buttons {
+    height: 56px;
+  }
+
+  .btn {
+    font-size: 13px;
+    padding: 8px 14px;
+  }
+
+  .btn--yes {
+    right: 24px;
+  }
+
+  .btn--no {
+    left: 24px;
+  }
+}
+
   
